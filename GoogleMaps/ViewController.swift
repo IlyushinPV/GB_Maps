@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        // Делегирование
         mapView.delegate = self
         configureMap()
     }
