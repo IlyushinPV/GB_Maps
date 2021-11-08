@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="57I-ry-jym">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Google_Maps" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vxv-zn-t5e" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vxv-zn-t5e" secondAttribute="trailing" id="17V-HT-6xv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Vxv-zn-t5e" secondAttribute="bottom" id="BYB-h1-Ezq"/>
+                            <constraint firstItem="Vxv-zn-t5e" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="88" id="DZQ-Za-NQV"/>
+                            <constraint firstItem="Vxv-zn-t5e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tP5-RH-M7s"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="iTg-bG-ptq">
+                        <leftBarButtonItems>
+                            <barButtonItem title="Center" id="U4f-pq-Zkp">
+                                <connections>
+                                    <action selector="goToCenter:" destination="BYZ-38-t0r" id="6pm-FJ-JIV"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Current" id="6Fu-Cl-ZOo">
+                                <connections>
+                                    <action selector="currentLocation:" destination="BYZ-38-t0r" id="HtI-Ui-aSX"/>
+                                </connections>
+                            </barButtonItem>
+                        </leftBarButtonItems>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Mark" id="KLc-2r-A0T">
+                                <connections>
+                                    <action selector="markAction:" destination="BYZ-38-t0r" id="pzj-rq-SbV"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Update" id="7El-AS-mLL">
+                                <connections>
+                                    <action selector="updateLocation:" destination="BYZ-38-t0r" id="XJe-7k-Qof"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="Vxv-zn-t5e" id="2eb-rl-oWn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="83.705357142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BFG-QL-JpT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="57I-ry-jym" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CJZ-rg-9cu">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="QMj-1M-YGa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aU3-bg-vae" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
