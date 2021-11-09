@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8841F52D2739522B00245A9C"
-               BuildableName = "GoogleMaps.app"
+               BuildableName = "Google_Maps.app"
                BlueprintName = "Google_Maps"
                ReferencedContainer = "container:Google_Maps.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8841F52D2739522B00245A9C"
-            BuildableName = "GoogleMaps.app"
+            BuildableName = "Google_Maps.app"
             BlueprintName = "Google_Maps"
             ReferencedContainer = "container:Google_Maps.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8841F52D2739522B00245A9C"
-            BuildableName = "GoogleMaps.app"
+            BuildableName = "Google_Maps.app"
             BlueprintName = "Google_Maps"
             ReferencedContainer = "container:Google_Maps.xcodeproj">
          </BuildableReference>
