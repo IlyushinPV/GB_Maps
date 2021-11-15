@@ -7,6 +7,7 @@
 
 import UIKit
 import GoogleMaps
+import RealmSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        GMSServices.provideAPIKey("AIzaSyBf0hWHmPKa-Oh13L3ZpTm9QLLL1Z4rrHM")
         
         return true
     }

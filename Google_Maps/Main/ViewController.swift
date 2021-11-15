@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  GoogleMaps
+//  Google_Maps
 //
-//  Created by iMac on 08.11.2021.
+//  Created by iMac on 14.11.2021.
 //
 
 import UIKit
@@ -11,16 +11,39 @@ import CoreLocation
 import RealmSwift
 
 class ViewController: UIViewController {
-    
-    @IBOutlet weak var mapView: GMSMapView!
-    
-    // Центр Москвы
-    private let coordinate = CLLocationCoordinate2D(latitude: 55.753215, longitude: 37.622504)
+
+    var usselesExampleVariable = ""
+
+    private let coordinate = CLLocationCoordinate2D(latitude: 55.728899, longitude: 37.654048)
     private var marker: GMSMarker?
-    private var locationManager: CLLocationManager?
     private var route: GMSPolyline?
     private var routePath: GMSMutablePath?
-    
+    private var locationManager: CLLocationManager?
+
+    @IBOutlet weak var mapView: GMSMapView!
+
+    @IBAction func currentLocation(_ sender: UIButton) {
+        locationManager?.stopUpdatingLocation()
+        do {
+            let realm = try Realm()
+            try realm.write {
+                realm.deleteAll()
+            }
+        } catch {
+            print(error)
+        }
+        addLastRoute()
+    }
+    @IBAction func lastroute(_ sender: Any) {
+        lastRoute()
+    }
+
+    @IBAction func recordLocation(_ sender: UIButton) {
+        addLine()
+        locationManager?.startUpdatingLocation()
+    }
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
         let camera = GMSCameraPosition.camera(withTarget: coordinate, zoom: 16)
@@ -46,6 +69,7 @@ class ViewController: UIViewController {
 
 
     func addLine() {
+        route?.map = nil
         route = GMSPolyline()
         route?.strokeColor = .systemBlue
         route?.strokeWidth = 2
@@ -108,32 +132,9 @@ class ViewController: UIViewController {
         mapView.camera = camera
         mapView.moveCamera(GMSCameraUpdate.zoomOut())
     }
-    
-    
-    @IBAction func stopAction(_ sender: UIButton) {
-        locationManager?.stopUpdatingLocation()
-        do {
-            let realm = try Realm()
-            try realm.write {
-                realm.deleteAll()
-            }
-        } catch {
-            print(error)
-        }
-        addLastRoute()
-    }
-    
-    @IBAction func lastAction(_ sender: UIButton) {
-        lastRoute()
-    }
-    
-    @IBAction func recordAction(_ sender: UIButton) {
-        addLine()
-        locationManager?.startUpdatingLocation()
-    }
-    
-}
 
+
+}
 extension ViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let location = locations.last else { return }
@@ -149,3 +150,4 @@ extension ViewController: CLLocationManagerDelegate {
         print(error)
     }
 }
+

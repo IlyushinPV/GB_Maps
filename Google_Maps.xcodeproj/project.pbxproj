@@ -9,13 +9,25 @@
 /* Begin PBXBuildFile section */
 		8841F5322739522B00245A9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8841F5312739522B00245A9C /* AppDelegate.swift */; };
 		8841F5342739522B00245A9C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8841F5332739522B00245A9C /* SceneDelegate.swift */; };
-		8841F5362739522B00245A9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8841F5352739522B00245A9C /* ViewController.swift */; };
-		8841F5392739522B00245A9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8841F5372739522B00245A9C /* Main.storyboard */; };
 		8841F53B2739523600245A9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8841F53A2739523600245A9C /* Assets.xcassets */; };
 		8841F53E2739523600245A9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8841F53C2739523600245A9C /* LaunchScreen.storyboard */; };
+		884355442742BB91003884B6 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8843553F2742BB91003884B6 /* AuthCoordinator.swift */; };
+		884355452742BB91003884B6 /* RecoveryPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884355402742BB91003884B6 /* RecoveryPasswordViewController.swift */; };
+		884355462742BB91003884B6 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 884355412742BB91003884B6 /* Auth.storyboard */; };
+		884355472742BB91003884B6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884355422742BB91003884B6 /* LoginViewController.swift */; };
+		884355482742BB91003884B6 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884355432742BB91003884B6 /* RegistrationViewController.swift */; };
+		8843554D2742BCE4003884B6 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8843554A2742BCE4003884B6 /* UserRepository.swift */; };
+		8843554E2742BCE4003884B6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8843554B2742BCE4003884B6 /* User.swift */; };
+		8843554F2742BCE4003884B6 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8843554C2742BCE4003884B6 /* Route.swift */; };
+		884355532742C030003884B6 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884355502742C030003884B6 /* ApplicationCoordinator.swift */; };
+		884355542742C030003884B6 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884355512742C030003884B6 /* BaseCoordinator.swift */; };
+		884355552742C030003884B6 /* StoryboardIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884355522742C030003884B6 /* StoryboardIdentifiable.swift */; };
+		8843555C2742C090003884B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884355572742C090003884B6 /* ViewController.swift */; };
+		8843555D2742C090003884B6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884355582742C090003884B6 /* MainViewController.swift */; };
+		8843555E2742C090003884B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 884355592742C090003884B6 /* Main.storyboard */; };
+		8843555F2742C090003884B6 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8843555B2742C090003884B6 /* MainCoordinator.swift */; };
 		88DFCBAA273D69C3004D2C5E /* (null) in Resources */ = {isa = PBXBuildFile; };
 		88DFCBAB273D69C6004D2C5E /* (null) in Resources */ = {isa = PBXBuildFile; };
-		88DFCBAD273D6C79004D2C5E /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DFCBAC273D6C79004D2C5E /* Route.swift */; };
 		E95A1A4D0656BBA0A5F49F07 /* Pods_Google_Maps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B500AA0A794A24CB386D5BB3 /* Pods_Google_Maps.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,12 +36,24 @@
 		8841F52E2739522B00245A9C /* Google_Maps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Google_Maps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8841F5312739522B00245A9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8841F5332739522B00245A9C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8841F5352739522B00245A9C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8841F5382739522B00245A9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8841F53A2739523600245A9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8841F53D2739523600245A9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8841F53F2739523600245A9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		88DFCBAC273D6C79004D2C5E /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		8843553F2742BB91003884B6 /* AuthCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
+		884355402742BB91003884B6 /* RecoveryPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecoveryPasswordViewController.swift; sourceTree = "<group>"; };
+		884355412742BB91003884B6 /* Auth.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		884355422742BB91003884B6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		884355432742BB91003884B6 /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		8843554A2742BCE4003884B6 /* UserRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		8843554B2742BCE4003884B6 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8843554C2742BCE4003884B6 /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		884355502742C030003884B6 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		884355512742C030003884B6 /* BaseCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		884355522742C030003884B6 /* StoryboardIdentifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardIdentifiable.swift; sourceTree = "<group>"; };
+		884355572742C090003884B6 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		884355582742C090003884B6 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		8843555A2742C090003884B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8843555B2742C090003884B6 /* MainCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		B500AA0A794A24CB386D5BB3 /* Pods_Google_Maps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Google_Maps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE8547E98B7B25B3292CEC78 /* Pods-Google_Maps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Google_Maps.release.xcconfig"; path = "Target Support Files/Pods-Google_Maps/Pods-Google_Maps.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,16 +91,52 @@
 		8841F5302739522B00245A9C /* Google_Maps */ = {
 			isa = PBXGroup;
 			children = (
+				884355562742C090003884B6 /* Main */,
+				884355502742C030003884B6 /* ApplicationCoordinator.swift */,
+				884355512742C030003884B6 /* BaseCoordinator.swift */,
+				884355522742C030003884B6 /* StoryboardIdentifiable.swift */,
+				884355492742BCE4003884B6 /* Realm */,
+				8843553E2742BB91003884B6 /* Auth */,
 				8841F5312739522B00245A9C /* AppDelegate.swift */,
 				8841F5332739522B00245A9C /* SceneDelegate.swift */,
-				8841F5352739522B00245A9C /* ViewController.swift */,
-				88DFCBAC273D6C79004D2C5E /* Route.swift */,
-				8841F5372739522B00245A9C /* Main.storyboard */,
 				8841F53A2739523600245A9C /* Assets.xcassets */,
 				8841F53C2739523600245A9C /* LaunchScreen.storyboard */,
 				8841F53F2739523600245A9C /* Info.plist */,
 			);
 			path = Google_Maps;
+			sourceTree = "<group>";
+		};
+		8843553E2742BB91003884B6 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				8843553F2742BB91003884B6 /* AuthCoordinator.swift */,
+				884355402742BB91003884B6 /* RecoveryPasswordViewController.swift */,
+				884355412742BB91003884B6 /* Auth.storyboard */,
+				884355422742BB91003884B6 /* LoginViewController.swift */,
+				884355432742BB91003884B6 /* RegistrationViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		884355492742BCE4003884B6 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				8843554A2742BCE4003884B6 /* UserRepository.swift */,
+				8843554B2742BCE4003884B6 /* User.swift */,
+				8843554C2742BCE4003884B6 /* Route.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		884355562742C090003884B6 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				884355572742C090003884B6 /* ViewController.swift */,
+				884355582742C090003884B6 /* MainViewController.swift */,
+				884355592742C090003884B6 /* Main.storyboard */,
+				8843555B2742C090003884B6 /* MainCoordinator.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		9D5EBCD327C8568EBB1D6D9B /* Frameworks */ = {
@@ -157,10 +217,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8843555E2742C090003884B6 /* Main.storyboard in Resources */,
+				884355462742BB91003884B6 /* Auth.storyboard in Resources */,
 				8841F53E2739523600245A9C /* LaunchScreen.storyboard in Resources */,
 				8841F53B2739523600245A9C /* Assets.xcassets in Resources */,
 				88DFCBAB273D69C6004D2C5E /* (null) in Resources */,
-				8841F5392739522B00245A9C /* Main.storyboard in Resources */,
 				88DFCBAA273D69C3004D2C5E /* (null) in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -231,30 +292,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8841F5362739522B00245A9C /* ViewController.swift in Sources */,
-				88DFCBAD273D6C79004D2C5E /* Route.swift in Sources */,
+				8843555F2742C090003884B6 /* MainCoordinator.swift in Sources */,
+				8843555C2742C090003884B6 /* ViewController.swift in Sources */,
+				884355552742C030003884B6 /* StoryboardIdentifiable.swift in Sources */,
+				884355472742BB91003884B6 /* LoginViewController.swift in Sources */,
+				884355442742BB91003884B6 /* AuthCoordinator.swift in Sources */,
+				884355542742C030003884B6 /* BaseCoordinator.swift in Sources */,
+				8843554F2742BCE4003884B6 /* Route.swift in Sources */,
+				8843554D2742BCE4003884B6 /* UserRepository.swift in Sources */,
+				8843555D2742C090003884B6 /* MainViewController.swift in Sources */,
+				884355482742BB91003884B6 /* RegistrationViewController.swift in Sources */,
 				8841F5322739522B00245A9C /* AppDelegate.swift in Sources */,
+				884355452742BB91003884B6 /* RecoveryPasswordViewController.swift in Sources */,
+				8843554E2742BCE4003884B6 /* User.swift in Sources */,
 				8841F5342739522B00245A9C /* SceneDelegate.swift in Sources */,
+				884355532742C030003884B6 /* ApplicationCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8841F5372739522B00245A9C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8841F5382739522B00245A9C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8841F53C2739523600245A9C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				8841F53D2739523600245A9C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		884355592742C090003884B6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8843555A2742C090003884B6 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -387,9 +459,10 @@
 				DEVELOPMENT_TEAM = UB4TRD7289;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Google_Maps/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "To Show Maps";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -416,9 +489,10 @@
 				DEVELOPMENT_TEAM = UB4TRD7289;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Google_Maps/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "To Show Maps";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
