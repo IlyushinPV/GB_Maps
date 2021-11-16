@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
 
 class LoginViewController: UIViewController {
 
@@ -13,6 +15,7 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var loginView: UITextField!
     @IBOutlet weak var passwordView: UITextField!
+    @IBOutlet weak var loginButton: UIButton!
 
     var onLogin: (() -> Void)?
     var onRecover: (() -> Void)?
@@ -20,9 +23,9 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureLoginBindings()
         textFieldState()
         addObservers()
-        print("github")
     }
 
 
@@ -32,10 +35,9 @@ class LoginViewController: UIViewController {
             let password = passwordView.text,
             let user = try? userRepository.compareUserData(login: login, password: password),
             !user.isEmpty
-         else {
-            showTextFields()
-             return
-         }
+        else {
+            return
+        }
  // Сохраним флаг, показывающий, что мы авторизованы
          UserDefaults.standard.set(true, forKey: "isLogin")
  // Перейдём к главному сценарию
@@ -65,8 +67,8 @@ class LoginViewController: UIViewController {
     }
     // скрыть логин и пароль
     @objc func hideTextFields() {
-        self.passwordView.text = "SECURITY"
-        self.loginView.text = "SECURITY"
+        self.passwordView.text = "Пароль"
+        self.loginView.text = "Логин"
         self.passwordView.isSecureTextEntry = false
 
     }
@@ -81,6 +83,19 @@ class LoginViewController: UIViewController {
         alert.addAction(action)
         present(alert, animated: true)
 
+    }
+    func configureLoginBindings() {
+        _ = Observable
+            .combineLatest(
+                loginView.rx.text,
+                passwordView.rx.text
+            )
+            .map { login, password in
+                return !(login ?? "").isEmpty && (password ?? "").count >= 1
+            }
+            .bind { [weak loginButton] inputFilled in
+                loginButton?.isEnabled = inputFilled
+            }
     }
 }
 

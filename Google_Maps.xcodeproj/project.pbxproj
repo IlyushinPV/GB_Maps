@@ -26,6 +26,7 @@
 		8843555D2742C090003884B6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884355582742C090003884B6 /* MainViewController.swift */; };
 		8843555E2742C090003884B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 884355592742C090003884B6 /* Main.storyboard */; };
 		8843555F2742C090003884B6 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8843555B2742C090003884B6 /* MainCoordinator.swift */; };
+		889A5F732743C75D00959397 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889A5F722743C75D00959397 /* LocationManager.swift */; };
 		88DFCBAA273D69C3004D2C5E /* (null) in Resources */ = {isa = PBXBuildFile; };
 		88DFCBAB273D69C6004D2C5E /* (null) in Resources */ = {isa = PBXBuildFile; };
 		E95A1A4D0656BBA0A5F49F07 /* Pods_Google_Maps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B500AA0A794A24CB386D5BB3 /* Pods_Google_Maps.framework */; };
@@ -54,6 +55,7 @@
 		884355582742C090003884B6 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8843555A2742C090003884B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8843555B2742C090003884B6 /* MainCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		889A5F722743C75D00959397 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		B500AA0A794A24CB386D5BB3 /* Pods_Google_Maps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Google_Maps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE8547E98B7B25B3292CEC78 /* Pods-Google_Maps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Google_Maps.release.xcconfig"; path = "Target Support Files/Pods-Google_Maps/Pods-Google_Maps.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,6 +97,7 @@
 				884355502742C030003884B6 /* ApplicationCoordinator.swift */,
 				884355512742C030003884B6 /* BaseCoordinator.swift */,
 				884355522742C030003884B6 /* StoryboardIdentifiable.swift */,
+				889A5F722743C75D00959397 /* LocationManager.swift */,
 				884355492742BCE4003884B6 /* Realm */,
 				8843553E2742BB91003884B6 /* Auth */,
 				8841F5312739522B00245A9C /* AppDelegate.swift */,
@@ -296,6 +299,7 @@
 				8843555C2742C090003884B6 /* ViewController.swift in Sources */,
 				884355552742C030003884B6 /* StoryboardIdentifiable.swift in Sources */,
 				884355472742BB91003884B6 /* LoginViewController.swift in Sources */,
+				889A5F732743C75D00959397 /* LocationManager.swift in Sources */,
 				884355442742BB91003884B6 /* AuthCoordinator.swift in Sources */,
 				884355542742C030003884B6 /* BaseCoordinator.swift in Sources */,
 				8843554F2742BCE4003884B6 /* Route.swift in Sources */,

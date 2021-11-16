@@ -9,21 +9,23 @@ import UIKit
 import GoogleMaps
 import CoreLocation
 import RealmSwift
+import RxCocoa
+import RxSwift
 
 class ViewController: UIViewController {
 
     var usselesExampleVariable = ""
 
-    private let coordinate = CLLocationCoordinate2D(latitude: 55.728899, longitude: 37.654048)
     private var marker: GMSMarker?
     private var route: GMSPolyline?
     private var routePath: GMSMutablePath?
-    private var locationManager: CLLocationManager?
+    //Вынес в отдельный файл
+    var locationManager = LocationManager.instance
 
     @IBOutlet weak var mapView: GMSMapView!
 
     @IBAction func currentLocation(_ sender: UIButton) {
-        locationManager?.stopUpdatingLocation()
+        locationManager.stopUpdatingLocation()
         do {
             let realm = try Realm()
             try realm.write {
@@ -40,31 +42,43 @@ class ViewController: UIViewController {
 
     @IBAction func recordLocation(_ sender: UIButton) {
         addLine()
-        locationManager?.startUpdatingLocation()
+        locationManager.startUpdatingLocation()
     }
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureLocationManager()
+    }
+
+
+
+    func configureMap() {
+        let coordinate = CLLocationCoordinate2D(latitude: 55.728899, longitude: 37.654048)
         let camera = GMSCameraPosition.camera(withTarget: coordinate, zoom: 16)
         mapView.camera = camera
         mapView.settings.myLocationButton = true
         mapView.settings.compassButton = true
         mapView.isMyLocationEnabled = true
-
-        configureLocationManager()
     }
 
     func configureLocationManager() {
-        locationManager = CLLocationManager()
-        locationManager?.delegate = self
-        locationManager?.allowsBackgroundLocationUpdates = true
-        locationManager?.pausesLocationUpdatesAutomatically = false
-        locationManager?.startMonitoringSignificantLocationChanges()
-        locationManager?.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
-        locationManager?.requestWhenInUseAuthorization()
-        locationManager?.requestAlwaysAuthorization()
-        locationManager!.startUpdatingLocation()
+        _ = locationManager
+            .location
+            .asObservable()
+            .bind { [weak self] location in
+                guard let location = location else { return }
+                self?.routePath?.add(location.coordinate)
+                // Обновляем путь у линии маршрута путём повторного присвоения
+                self?.route?.path = self?.routePath
+                self?.removeMarker()
+                self?.addMarker(position: location.coordinate)
+                self?.configureMap()
+                // Чтобы наблюдать за движением, установим камеру на только что добавленную точку
+             //   self?.configureMap(coordinate: location.coordinate)
+                let position = GMSCameraPosition.camera(withTarget: location.coordinate, zoom: 17)
+                self?.mapView.animate(to: position)
+            }
     }
 
 
@@ -150,4 +164,3 @@ extension ViewController: CLLocationManagerDelegate {
         print(error)
     }
 }
-
