@@ -7,27 +7,57 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03408D84D85FA2D2B1AFD53C /* Pods_GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FE82D643A9F7DD57FCBEAF /* Pods_GoogleMaps.framework */; };
 		8841F5322739522B00245A9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8841F5312739522B00245A9C /* AppDelegate.swift */; };
 		8841F5342739522B00245A9C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8841F5332739522B00245A9C /* SceneDelegate.swift */; };
-		8841F5362739522B00245A9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8841F5352739522B00245A9C /* ViewController.swift */; };
-		8841F5392739522B00245A9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8841F5372739522B00245A9C /* Main.storyboard */; };
 		8841F53B2739523600245A9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8841F53A2739523600245A9C /* Assets.xcassets */; };
 		8841F53E2739523600245A9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8841F53C2739523600245A9C /* LaunchScreen.storyboard */; };
+		884355442742BB91003884B6 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8843553F2742BB91003884B6 /* AuthCoordinator.swift */; };
+		884355452742BB91003884B6 /* RecoveryPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884355402742BB91003884B6 /* RecoveryPasswordViewController.swift */; };
+		884355462742BB91003884B6 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 884355412742BB91003884B6 /* Auth.storyboard */; };
+		884355472742BB91003884B6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884355422742BB91003884B6 /* LoginViewController.swift */; };
+		884355482742BB91003884B6 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884355432742BB91003884B6 /* RegistrationViewController.swift */; };
+		8843554D2742BCE4003884B6 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8843554A2742BCE4003884B6 /* UserRepository.swift */; };
+		8843554E2742BCE4003884B6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8843554B2742BCE4003884B6 /* User.swift */; };
+		8843554F2742BCE4003884B6 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8843554C2742BCE4003884B6 /* Route.swift */; };
+		884355532742C030003884B6 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884355502742C030003884B6 /* ApplicationCoordinator.swift */; };
+		884355542742C030003884B6 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884355512742C030003884B6 /* BaseCoordinator.swift */; };
+		884355552742C030003884B6 /* StoryboardIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884355522742C030003884B6 /* StoryboardIdentifiable.swift */; };
+		8843555C2742C090003884B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884355572742C090003884B6 /* ViewController.swift */; };
+		8843555D2742C090003884B6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884355582742C090003884B6 /* MainViewController.swift */; };
+		8843555E2742C090003884B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 884355592742C090003884B6 /* Main.storyboard */; };
+		8843555F2742C090003884B6 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8843555B2742C090003884B6 /* MainCoordinator.swift */; };
+		889A5F732743C75D00959397 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889A5F722743C75D00959397 /* LocationManager.swift */; };
+		88DFCBAA273D69C3004D2C5E /* (null) in Resources */ = {isa = PBXBuildFile; };
+		88DFCBAB273D69C6004D2C5E /* (null) in Resources */ = {isa = PBXBuildFile; };
+		E95A1A4D0656BBA0A5F49F07 /* Pods_Google_Maps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B500AA0A794A24CB386D5BB3 /* Pods_Google_Maps.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		032AAB7F29367615C9CB1690 /* Pods-GoogleMaps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleMaps.debug.xcconfig"; path = "Target Support Files/Pods-GoogleMaps/Pods-GoogleMaps.debug.xcconfig"; sourceTree = "<group>"; };
-		08FE82D643A9F7DD57FCBEAF /* Pods_GoogleMaps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleMaps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		703803008A6D2B8D0A7BEB28 /* Pods-GoogleMaps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleMaps.release.xcconfig"; path = "Target Support Files/Pods-GoogleMaps/Pods-GoogleMaps.release.xcconfig"; sourceTree = "<group>"; };
+		4D39DFF834ACF445B4C3794F /* Pods-Google_Maps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Google_Maps.debug.xcconfig"; path = "Target Support Files/Pods-Google_Maps/Pods-Google_Maps.debug.xcconfig"; sourceTree = "<group>"; };
 		8841F52E2739522B00245A9C /* Google_Maps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Google_Maps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8841F5312739522B00245A9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8841F5332739522B00245A9C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8841F5352739522B00245A9C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8841F5382739522B00245A9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8841F53A2739523600245A9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8841F53D2739523600245A9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8841F53F2739523600245A9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8843553F2742BB91003884B6 /* AuthCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
+		884355402742BB91003884B6 /* RecoveryPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecoveryPasswordViewController.swift; sourceTree = "<group>"; };
+		884355412742BB91003884B6 /* Auth.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		884355422742BB91003884B6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		884355432742BB91003884B6 /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		8843554A2742BCE4003884B6 /* UserRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		8843554B2742BCE4003884B6 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8843554C2742BCE4003884B6 /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		884355502742C030003884B6 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		884355512742C030003884B6 /* BaseCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		884355522742C030003884B6 /* StoryboardIdentifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardIdentifiable.swift; sourceTree = "<group>"; };
+		884355572742C090003884B6 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		884355582742C090003884B6 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		8843555A2742C090003884B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8843555B2742C090003884B6 /* MainCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		889A5F722743C75D00959397 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		B500AA0A794A24CB386D5BB3 /* Pods_Google_Maps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Google_Maps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE8547E98B7B25B3292CEC78 /* Pods-Google_Maps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Google_Maps.release.xcconfig"; path = "Target Support Files/Pods-Google_Maps/Pods-Google_Maps.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03408D84D85FA2D2B1AFD53C /* Pods_GoogleMaps.framework in Frameworks */,
+				E95A1A4D0656BBA0A5F49F07 /* Pods_Google_Maps.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,10 +75,10 @@
 		8841F5252739522B00245A9C = {
 			isa = PBXGroup;
 			children = (
-				8841F5302739522B00245A9C /* GoogleMaps */,
+				8841F5302739522B00245A9C /* Google_Maps */,
 				8841F52F2739522B00245A9C /* Products */,
 				F07D341161B2E201BF6FAE05 /* Pods */,
-				975A8A2C5F5C06325A6A30A6 /* Frameworks */,
+				9D5EBCD327C8568EBB1D6D9B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,24 +90,62 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8841F5302739522B00245A9C /* GoogleMaps */ = {
+		8841F5302739522B00245A9C /* Google_Maps */ = {
 			isa = PBXGroup;
 			children = (
+				884355562742C090003884B6 /* Main */,
+				884355502742C030003884B6 /* ApplicationCoordinator.swift */,
+				884355512742C030003884B6 /* BaseCoordinator.swift */,
+				884355522742C030003884B6 /* StoryboardIdentifiable.swift */,
+				889A5F722743C75D00959397 /* LocationManager.swift */,
+				884355492742BCE4003884B6 /* Realm */,
+				8843553E2742BB91003884B6 /* Auth */,
 				8841F5312739522B00245A9C /* AppDelegate.swift */,
 				8841F5332739522B00245A9C /* SceneDelegate.swift */,
-				8841F5352739522B00245A9C /* ViewController.swift */,
-				8841F5372739522B00245A9C /* Main.storyboard */,
 				8841F53A2739523600245A9C /* Assets.xcassets */,
 				8841F53C2739523600245A9C /* LaunchScreen.storyboard */,
 				8841F53F2739523600245A9C /* Info.plist */,
 			);
-			path = GoogleMaps;
+			path = Google_Maps;
 			sourceTree = "<group>";
 		};
-		975A8A2C5F5C06325A6A30A6 /* Frameworks */ = {
+		8843553E2742BB91003884B6 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				08FE82D643A9F7DD57FCBEAF /* Pods_GoogleMaps.framework */,
+				8843553F2742BB91003884B6 /* AuthCoordinator.swift */,
+				884355402742BB91003884B6 /* RecoveryPasswordViewController.swift */,
+				884355412742BB91003884B6 /* Auth.storyboard */,
+				884355422742BB91003884B6 /* LoginViewController.swift */,
+				884355432742BB91003884B6 /* RegistrationViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		884355492742BCE4003884B6 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				8843554A2742BCE4003884B6 /* UserRepository.swift */,
+				8843554B2742BCE4003884B6 /* User.swift */,
+				8843554C2742BCE4003884B6 /* Route.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		884355562742C090003884B6 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				884355572742C090003884B6 /* ViewController.swift */,
+				884355582742C090003884B6 /* MainViewController.swift */,
+				884355592742C090003884B6 /* Main.storyboard */,
+				8843555B2742C090003884B6 /* MainCoordinator.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		9D5EBCD327C8568EBB1D6D9B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B500AA0A794A24CB386D5BB3 /* Pods_Google_Maps.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -85,8 +153,8 @@
 		F07D341161B2E201BF6FAE05 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				032AAB7F29367615C9CB1690 /* Pods-GoogleMaps.debug.xcconfig */,
-				703803008A6D2B8D0A7BEB28 /* Pods-GoogleMaps.release.xcconfig */,
+				4D39DFF834ACF445B4C3794F /* Pods-Google_Maps.debug.xcconfig */,
+				FE8547E98B7B25B3292CEC78 /* Pods-Google_Maps.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -98,11 +166,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8841F5422739523600245A9C /* Build configuration list for PBXNativeTarget "Google_Maps" */;
 			buildPhases = (
-				CF51B00FF8DDCAE9B285DCEE /* [CP] Check Pods Manifest.lock */,
+				87DF4E85C07DA04F2AFF5798 /* [CP] Check Pods Manifest.lock */,
 				8841F52A2739522B00245A9C /* Sources */,
 				8841F52B2739522B00245A9C /* Frameworks */,
 				8841F52C2739522B00245A9C /* Resources */,
-				BD8B779D1A01185412885A17 /* [CP] Copy Pods Resources */,
+				8DE6E8E852EE7C0700A7232B /* [CP] Embed Pods Frameworks */,
+				9750F248FBF915019BF7C8AB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -151,33 +220,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8843555E2742C090003884B6 /* Main.storyboard in Resources */,
+				884355462742BB91003884B6 /* Auth.storyboard in Resources */,
 				8841F53E2739523600245A9C /* LaunchScreen.storyboard in Resources */,
 				8841F53B2739523600245A9C /* Assets.xcassets in Resources */,
-				8841F5392739522B00245A9C /* Main.storyboard in Resources */,
+				88DFCBAB273D69C6004D2C5E /* (null) in Resources */,
+				88DFCBAA273D69C3004D2C5E /* (null) in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		BD8B779D1A01185412885A17 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GoogleMaps/Pods-GoogleMaps-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GoogleMaps/Pods-GoogleMaps-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoogleMaps/Pods-GoogleMaps-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CF51B00FF8DDCAE9B285DCEE /* [CP] Check Pods Manifest.lock */ = {
+		87DF4E85C07DA04F2AFF5798 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -192,11 +247,45 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-GoogleMaps-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Google_Maps-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DE6E8E852EE7C0700A7232B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Google_Maps/Pods-Google_Maps-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Google_Maps/Pods-Google_Maps-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Google_Maps/Pods-Google_Maps-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9750F248FBF915019BF7C8AB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Google_Maps/Pods-Google_Maps-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Google_Maps/Pods-Google_Maps-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Google_Maps/Pods-Google_Maps-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -206,29 +295,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8841F5362739522B00245A9C /* ViewController.swift in Sources */,
+				8843555F2742C090003884B6 /* MainCoordinator.swift in Sources */,
+				8843555C2742C090003884B6 /* ViewController.swift in Sources */,
+				884355552742C030003884B6 /* StoryboardIdentifiable.swift in Sources */,
+				884355472742BB91003884B6 /* LoginViewController.swift in Sources */,
+				889A5F732743C75D00959397 /* LocationManager.swift in Sources */,
+				884355442742BB91003884B6 /* AuthCoordinator.swift in Sources */,
+				884355542742C030003884B6 /* BaseCoordinator.swift in Sources */,
+				8843554F2742BCE4003884B6 /* Route.swift in Sources */,
+				8843554D2742BCE4003884B6 /* UserRepository.swift in Sources */,
+				8843555D2742C090003884B6 /* MainViewController.swift in Sources */,
+				884355482742BB91003884B6 /* RegistrationViewController.swift in Sources */,
 				8841F5322739522B00245A9C /* AppDelegate.swift in Sources */,
+				884355452742BB91003884B6 /* RecoveryPasswordViewController.swift in Sources */,
+				8843554E2742BCE4003884B6 /* User.swift in Sources */,
 				8841F5342739522B00245A9C /* SceneDelegate.swift in Sources */,
+				884355532742C030003884B6 /* ApplicationCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8841F5372739522B00245A9C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8841F5382739522B00245A9C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8841F53C2739523600245A9C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				8841F53D2739523600245A9C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		884355592742C090003884B6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8843555A2742C090003884B6 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -352,7 +454,7 @@
 		};
 		8841F5432739523600245A9C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 032AAB7F29367615C9CB1690 /* Pods-GoogleMaps.debug.xcconfig */;
+			baseConfigurationReference = 4D39DFF834ACF445B4C3794F /* Pods-Google_Maps.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -360,10 +462,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UB4TRD7289;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = GoogleMaps/Info.plist;
+				INFOPLIST_FILE = Google_Maps/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "To Show Maps";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -381,7 +484,7 @@
 		};
 		8841F5442739523600245A9C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 703803008A6D2B8D0A7BEB28 /* Pods-GoogleMaps.release.xcconfig */;
+			baseConfigurationReference = FE8547E98B7B25B3292CEC78 /* Pods-Google_Maps.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -389,10 +492,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UB4TRD7289;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = GoogleMaps/Info.plist;
+				INFOPLIST_FILE = Google_Maps/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "To Show Maps";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
