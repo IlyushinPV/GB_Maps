@@ -1,5 +1,5 @@
 //
-//  Route.swift
+//  AuthCoordinator.swift
 //  Google_Maps
 //
 //  Created by iMac on 14.11.2021.
